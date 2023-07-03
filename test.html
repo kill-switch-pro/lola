@@ -1,61 +1,12 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="style.css"> 
-  <title></title>
+  <title>My Website</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-
-<body class="test">
-
-
-<p id="demo">=></p>
-<button onclick="nxtPage()">pls click me</button>
-<script>
-
-var i = 0;
-var txt = 'hey lola, im writing this to remind you that where ever you are im still thinking of you, and i wish you all the greatest things i will ever wish myself, grow in grace and in the mercies of GOD , you will live an achievement filled life, no regrets and no sorrows . i wish you the best in all dimensions of your life . you are one of the most brilliant and intelligent person ive ever known ,  serve God with your heart  and dont compromise your love for God . best advice i will give you  is , live like you will die tomorrow , read like you wil live forever . happy savage seventeen, make this 365days count . lot of love from w3b.               .          ps : this is all what i got for you; and you can also showoff with it :) ';
-var speed = 50;
-var name = prompt("what is your name ?")
-if(name == "lola"){
-typeWriter();
-  
-
-
-
-function typeWriter() {
-  
-  if (i < txt.length) {
-    document.getElementById("demo").innerHTML += txt.charAt(i);
-    i++;
-    setTimeout(typeWriter, speed);
-  }
-
-}
-}
-
-else{
-  setInterval(shout, 500)
-}
-
-
-
-
-function shout(){
-  alert("intruder !")
-  alert("intruder !")
-  alert("intruder !")
-}
-
-function nxtPage(){
-  
-window.location.assign("index.html")
-  
-}
-</script>
-
+<body>
+<pre id="text">Loading...</pre>
+<canvas id="canvas"></canvas>
+  <script src="main.js"></script>
 </body>
-
 </html>
